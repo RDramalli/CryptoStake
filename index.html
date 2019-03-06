@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Test</title>
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.min.css" rel="stylesheet">
+      
+    <!-- Bootstrap core JavaScript -->
+    <script src="jquery.min.js"></script>
+    <script src="script.js"></script>
+	<script src="bootstrap.bundle.min.js"></script>
+	<link href="style.css" rel="stylesheet">
+	
+ 
+</head>
+<body>
+
+	<div class="container">
+
+		<div class="row divRow" id="wifi">
+			<div class="col-md-3">
+				<button class="btn btn-primary" id="scan-wifi">Scan</button>
+			</div>
+			<div class="col-md-7 offset-md-1" id="wifiConnect">
+				<select id="networkList">
+				</select>
+				<input type="password" placeholder="password" id="wifiPassword" />
+				<button class="btn btn-primary" id="wifi-connect">Connect</button>
+			</div>
+		</div>
+		
+		<div class="row divRow">
+			<div class="col-md-7 col-sm-12 div">
+				<div class="row"  id="wallets">
+				<!--Displaying the list of walelt-->
+					
+
+				</div>
+			</div>
+			<div id="stakingWallets" class="col-md-4 col-sm-12 div">
+					Staking wallet list
+			</div>
+		</div>
+
+		<div class="row divRow">
+			<div class="col-sm-11 div" id="walletInfo">
+					Choose Wallet
+
+
+			</div>
+		</div>
+	</div>
+
+
+
+
+  	<!-- Unlock Wallet Modal -->
+				  <div class="modal fade" id="unlockWalletModal" role="dialog" data-backdrop="static">
+				    <div class="modal-dialog">
+				      <!-- Modal content-->
+				      <div class="modal-content">
+				        <div class="modal-header">
+				            <h3>Unlock Wallet</h3>
+				          <button type="button" class="close" data-dismiss="modal">&times;</button><br>
+				        </div>
+				        <div class="modal-body">
+				        <table class="table">
+					        	<tr>
+					        		<td>Password: </td>
+					        		<td>
+					        			<input type="hidden" id="unlockWalletName" />
+					        			<input type="password" id="unlockWalletPassword" />
+					        		</td>
+					        	</tr>
+					        	<tr>
+					        		<td>Time: </td>
+					        		<td><input type="number" id="unlockWalletTime" min="0" max="9999999999" value="0" /></td>
+					        	</tr>
+					        	<tr>
+					        		<td>Send/Receive Coins: </td>
+					        		<td><input type="checkbox" id="unlockWalletCoins" /></td>
+					        	</tr>
+					        	<tr>
+					        		<td></td>
+					        		<td> <button id="unlockWalletBtnModal">Unlock Wallet</button></td>
+					        	</tr>
+				        </table>
+				        
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+
+
+  	<!-- Encrypt Wallet Modal -->
+	  <div class="modal fade" id="encryptWalletModal" role="dialog" data-backdrop="static">
+	    <div class="modal-dialog">
+	      <!-- Modal content-->
+	      <div class="modal-content">
+	        <div class="modal-header">
+	            <h3>Encrypt Wallet</h3>
+	          <button type="button" class="close" data-dismiss="modal">&times;</button><br>
+	        </div>
+	        <div class="modal-body">
+	        <table class="table">
+		       <tr>
+		       		<td>Passphrase: </td> 
+		       		<td>
+		       			<input type="hidden" id="encryptWalletName" /><input type="password" id="encryptionPassword" />
+		       		</td>
+		       </tr>
+		       <tr>
+		       		<td></td> <td><button class="walletBtn" id="encryptBtn">Encrypt</button></td>
+		       </tr>
+	        </table>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+
+
+
+
+
+
+
+</body>
+</html>

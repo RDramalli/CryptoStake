@@ -1,0 +1,54 @@
+#wifiConnect{
+	display: none;
+}
+
+.div{
+	border: 1px solid lightgrey;
+	margin: 10px;
+}
+.divRow{
+	border: 1px solid lightgrey;
+	padding: 5px;
+	margin: 5px;
+}
+.wallet, .walletInfo{
+	border: 1px solid #99b3ff;
+	
+	min-width: 250px;
+	min-height: 100px;
+
+}
+.selectedWallet{
+	background-color:  #b3ccff;
+}
+.walletImage{
+	height: 100px;
+	width: auto;
+	line-height: 50px;
+}
+
+#startWalletBtn{
+	width: 100px;
+	background-color: #42f45c;
+	
+}
+#stopWalletBtn{
+	background-color: #f20909;
+}
+#stopWalletBtn, #startWalletBtn{
+	width: 100px;
+	border-radius: 5px;
+}
+
+.walletBtn{
+	width: 100px;
+	margin: 5px;
+
+}
+#restoreBackup{
+	display: none;
+}
+
+#walletInfoTable{
+	width: 60%;
+}
